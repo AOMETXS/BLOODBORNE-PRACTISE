@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Oswald:wght@200;300&family=Poppins:wght@400;600&display=swap");
+:root {
+  --primary-color: rgb(161, 161, 161);
+}
+
+body {
+  background: #252525;
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville';
+  color: var(--primary-color);
+}
+
+a {
+  color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+li.current {
+  font-weight: bold;
+}
+
+.navigation-bar {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.89);
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.377);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.377);
+  z-index: 10000;
+}
+
+.navigation-bar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  height: 70px;
+}
+
+.navigation-bar .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20pt;
+  text-decoration: none;
+}
+
+.navigation-bar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-bar .primary-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  place-content: space-between;
+  list-style: none;
+  margin-top: 27px;
+  margin-right: 85em;
+}
+
+.hero-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(34, 34, 34, 0.856);
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  top: 200px;
+}
+
+.hero-page .container-top {
+  width: 900px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  left: 10px;
+}
+
+.hero-page .container-top .sub-heading {
+  font-size: 40px;
+  margin: 0;
+}
+
+.hero-page .container-top .main-heading {
+  font-size: 80px;
+  margin: .3em;
+}
+
+.hero-page .container-bottom {
+  position: relative;
+  left: -100px;
+}
+
+.Information {
+  display: block;
+}
+
+.Information .Image-bk {
+  display: block;
+  width: 100%;
+}
+
+.Information .container {
+  position: relative;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.856);
+  top: -750px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em;
+}
+
+.Information .container .container-left {
+  position: relative;
+  left: -10em;
+  width: 700px;
+  font-size: 1.5em;
+  padding-left: -20px;
+}
+
+.Information .container .container-right {
+  height: 300px;
+  width: auto;
+}
+
+.Contact {
+  height: 1080px;
+}
+
+.Contact h2 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.Contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Contact li {
+  list-style: none;
+}
+
+.Contact input, .Contact label, .Contact textarea {
+  display: block;
+  width: 600px;
+  height: 50px;
+  color: var(--primary-color);
+}
+
+.Contact input {
+  padding: 0 0 0 1em;
+}
+
+.Contact label {
+  font-size: 2em;
+  padding: .3em 0 0 0;
+}
+
+.Contact textarea, .Contact input {
+  font-size: em;
+  border: none;
+  border-radius: 1em;
+  background-color: #161616;
+}
+
+.Contact textarea {
+  padding: 2em 0 0 1em;
+}
+
+.Contact .send-message-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5em 0 0 12em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 3em;
+  width: 20em;
+}
+
+.Contact .send-message-cta:hover {
+  font-weight: bold;
+  background-color: rgba(53, 53, 53, 0.253);
+}
+
+@media screen and (min-width: 2000px) {
+  .navigation-bar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: space-between;
+    height: 70px;
+  }
+  .navigation-bar .logo {
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 20pt;
+    text-decoration: none;
+  }
+  .navigation-bar .primary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    place-content: space-between;
+    list-style: none;
+    margin-top: 27px;
+    margin-right: 120em;
+  }
+  .hero-page .container {
+    height: 700px;
+    top: 300px;
+  }
+  .hero-page .container .container-top {
+    left: 30px;
+    width: 600px;
+  }
+  .hero-page .container .container-top .sub-heading {
+    font-size: 60px;
+  }
+  .hero-page .container .container-top .main-heading {
+    font-size: 100px;
+  }
+  .hero-page .container .container-bottom {
+    left: 100px;
+  }
+  .hero-page .container .container-bottom iframe {
+    width: 1000px;
+    height: 560px;
+  }
+  .hero-page .Information .container {
+    top: -1000px;
+    padding: 5em;
+  }
+  .hero-page .Information .container .container-left {
+    left: -6em;
+    width: 800px;
+    font-size: 2.3em;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
